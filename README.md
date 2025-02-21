@@ -1,4 +1,4 @@
-<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -21,6 +21,74 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+# Penilaian Siswa
+
+Project **Penilaian Siswa** adalah aplikasi web sederhana untuk mengelola data penilaian siswa menggunakan **Laravel** dan **MySQL**. Aplikasi ini menyediakan fitur CRUD (Create, Read, Update, Delete) untuk data siswa dan penilaiannya.
+
+
+---
+
+## 📦 Teknologi yang Digunakan
+
+- **Framework:** Laravel
+- **Database:** MySQL
+- **Frontend:** Bootstrap, HTML, CSS
+- **Backend:** PHP (Laravel)
+
+---
+
+## ⚙️ Persyaratan
+
+- **PHP:** >= 8.0
+- **Composer**
+- **MySQL**
+- **Node.js & npm** (opsional untuk frontend)
+
+---
+# 🚧 Cara Install
+
+1. **Clone repositori ini:**
+```bash
+git clone https://github.com/Fatz-Dev/Laravel-penilaian-siswa-sederhana.git
+```
+
+2. **Instal dependensi:**
+```bash
+composer install
+npm install && npm run dev
+```
+
+3. **Konfigurasi environment:**
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+4. **Konfigurasi database:**
+- Atur koneksi database di file `.env`:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db_nilai
+DB_USERNAME=root
+DB_PASSWORD=yourpassword
+```
+
+5. **Migrasi dan seeding database:**
+```bash
+php artisan migrate --seed
+```
+
+6. **Jalankan server lokal:**
+```bash
+php artisan serve
+```
+- Akses aplikasi di: [http://localhost:8000](http://localhost:8000)
+
+---
+
+
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
@@ -33,7 +101,21 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
+### Premium Partners
 
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
 ## Contributing
 
@@ -51,53 +133,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## Getting Started
-
-
-### Prasyarat
-
-- PHP >= 7.3
-- Composer
-- Node.js & npm
-
-### Instalasi
-
-1. Kloning repositori:
-    ```sh
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
-    ```
-
-2. Instal dependensi:
-    ```sh
-    composer install
-    npm install
-    ```
-
-3. Salin file [.env.example](http://_vscodecontentref_/0) ke [.env](http://_vscodecontentref_/1) dan konfigurasikan variabel lingkungan Anda:
-    ```sh
-    cp .env.example .env
-    ```
-
-4. Hasilkan kunci aplikasi:
-    ```sh
-    php artisan key:generate
-    ```
-
-5. Jalankan migrasi database:
-    ```sh
-    php artisan migrate
-    ```
-
-6. Mulai server pengembangan:
-    ```sh
-    php artisan serve
-    ```
-
-Aplikasi Anda sekarang harus berjalan di [http://localhost:8000](http://localhost:8000).
-
-### Menjalankan Tes
-
-Untuk menjalankan tes, gunakan perintah berikut:
-```sh
-phpunit
